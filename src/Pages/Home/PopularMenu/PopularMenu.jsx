@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import SectionTitle from "../../../Components/SectionTitle/SectionTitle"
+import MenuItem from "../../Shared/MenuItem/MenuItem"
 
 
 const PopularMenu = () => {
@@ -16,20 +17,10 @@ const PopularMenu = () => {
    <section>
     <SectionTitle heading={"From Our Menu"} subheading={"Items"}/>
 
-    <div>
+    <div className="grid md:grid-cols-2 gap-4 ">
       {
         menu.map(item => (
-          <div key={item.id} className="md:w-4/12 mx-auto mb-5">
-            <div className="flex justify-between items-center">
-              <div>
-                <h3 className="text-2xl text-black uppercase">{item.name}</h3>
-                <p className="text-yellow-600 text-lg">${item.price}</p>
-              </div>
-              <div>
-                <img src={item.img} alt="" />
-              </div>
-            </div>
-          </div>
+          <MenuItem key={item.id} item={item}/>
         ))
       }
     </div>
