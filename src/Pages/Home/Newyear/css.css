@@ -1,0 +1,26 @@
+@keyframes fireworks {
+    0% {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-500px) scale(0);
+      opacity: 0;
+    }
+  }
+  
+  .fireworks-animation {
+    position: relative;
+  }
+  
+  .firework {
+    position: absolute;
+    width: 5px;
+    height: 50px;
+    background: linear-gradient(to bottom, #f00, #ff0, #0f0, #00f, #f0f, #f00);
+    border-radius: 50%;
+    animation: fireworks 2s ease-out infinite;
+  }
+  
+  /* Add more styles or modify as needed */
+  
