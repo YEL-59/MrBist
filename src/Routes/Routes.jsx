@@ -4,6 +4,7 @@ import {
   } from "react-router-dom";
 import Main from "../Layout/Main";
 import Home from "../Pages/Home/Home";
+import Menu from "../Pages/Menu/Menu";
 
 
 
@@ -17,8 +18,8 @@ import Home from "../Pages/Home/Home";
           element: <Home/>,
         },
         {
-          path: "/about",
-          element: <h1>About</h1>,
+          path: "/menu",
+          element: <Menu/>,
         },
         {
           path: "/contact",
