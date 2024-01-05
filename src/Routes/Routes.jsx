@@ -5,6 +5,8 @@ import {
 import Main from "../Layout/Main";
 import Home from "../Pages/Home/Home";
 import Menu from "../Pages/Menu/Menu";
+import OrderFood from "../Pages/Order/OrderFood/OrderFood";
+
 
 
 
@@ -22,8 +24,8 @@ import Menu from "../Pages/Menu/Menu";
           element: <Menu/>,
         },
         {
-          path: "/contact",
-          element: <h1>Contact</h1>,
+          path: "/orderfood",
+          element: <OrderFood/>,
         },
       ],
     },
