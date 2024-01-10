@@ -18,6 +18,9 @@ const Navbar = () => {
       <li>
         <Link to={"/orderfood/salad"}>Order food</Link>
       </li>
+      <li>
+        <Link to={"/login"}>login</Link>
+      </li>
     </>
   );
   return (
